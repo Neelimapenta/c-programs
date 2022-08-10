@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+   int num,n,r=0,har=0;
+   scanf("%d",&num);
+  n=num;
+   while(num>0)
+   {
+       r=num%10;
+       har=har+r;
+       num=num/10;
+   }
+   if(n%har==0)
+   printf("harshad number");
+   else
+   printf("not harshad number");
+   
+    return 0;
+}
