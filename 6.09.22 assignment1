@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void tower(int n,char from,char aux,char to)
+{
+    if(n>=1) {
+        tower(n-1,from,aux,to);
+     printf("\nMoving ring %d from %c to %c",n,from,to);
+    tower(n-1,to,from,aux);
+    }
+    
+}
+void tower(int,char,char,char);
+int main() {
+    int v;
+    scanf("%d",&v);
+    tower(v,'A','B','C');
+    return (0);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+output
